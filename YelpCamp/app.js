@@ -7,7 +7,7 @@ mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true, 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
-// Schema setup
+// Schema setup 
 var campgroundSchema = new mongoose.Schema({
 	name: String,
 	image: String,
