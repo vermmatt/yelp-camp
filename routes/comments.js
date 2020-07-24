@@ -6,7 +6,6 @@ var Comment = require("../models/comment");
 //Comments New
 router.get("/new", isLoggedIn, function(req, res){
     // find campground by id
-    console.log(req.params.id);
     Campground.findById(req.params.id, function(err, campground){
         if(err){
             console.log(err);
